@@ -49,9 +49,9 @@ resource "azurerm_virtual_network_gateway" "this" {
   }
 
   vpn_client_configuration {
-    address_space = [ "172.16.201.0/24" ]
+    address_space = ["172.16.201.0/24"]
     root_certificate {
-      name = "MyPc-CA"
+      name             = "MyPc-CA"
       public_cert_data = <<-EOT
                     MIIDJDCCAgwCCQDwdAE4xVle/DANBgkqhkiG9w0BAQsFADBUMQswCQYDVQQGEwJJ
                     VDEOMAwGA1UECAwFSXRhbHkxDjAMBgNVBAcMBU1pbGFuMQswCQYDVQQKDAJNZTEL
